@@ -1,1 +1,181 @@
-kkkkkk
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Thẻ Cơ Bản với CSS External</title>
+    <!-- Liên kết tới file CSS External -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        /* Internal CSS cho ảnh */
+        img {
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Internal CSS: Áp dụng cho tất cả các thẻ với lớp 'box' */
+        .box {
+            color: blue; /* Màu mặc định */
+            font-size: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Selector với specificity cao hơn */
+        #box1 {
+            color: green; /* Được áp dụng nếu có id 'box1' */
+        }
+
+        /* Universal Selector: Áp dụng cho tất cả các thẻ */
+        * {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- 00:00 - Giới thiệu -->
+    <header>
+        <h1>Hướng dẫn HTML cơ bản với CSS</h1>
+        <p>Học cách sử dụng các thẻ HTML quan trọng nhất qua ví dụ minh họa.</p>
+    </header>
+
+    <!-- 00:21 - Thẻ heading - h1 đến h6 -->
+    <section>
+        <h2>Thẻ Heading</h2>
+        <!-- Các thẻ h1 đến h6 dùng để tạo tiêu đề với độ quan trọng giảm dần -->
+        <h1>Đây là Heading 1</h1>
+        <h2 style="color:blue">Đây là Heading 2(internal)</h2>
+        <h3>Đây là Heading 3</h3>
+        <h4>Đây là Heading 4</h4>
+        <h5>Đây là Heading 5</h5>
+        <h6>Đây là Heading 6</h6>
+    </section>
+
+    <!-- 01:12 - Thẻ p -->
+    <section>
+        <h2>Thẻ Paragraph</h2>
+        <p>Đây là một đoạn văn ví dụ sử dụng thẻ <strong>p</strong>. Định dạng của nó được áp dụng từ CSS External.</p>
+    </section>
+
+    <!-- 01:41 - Thẻ img -->
+    <section>
+        <h2>Thẻ Ảnh (img)</h2>
+        <img src="example.jpg" alt="Ví dụ ảnh">
+    </section>
+
+    <!-- 03:20 - Thẻ a -->
+    <section>
+        <h2>Thẻ Liên kết (a)</h2>
+        <a href="https://www.example.com" target="_blank">Truy cập Example</a>
+    </section>
+
+    <!-- 04:22 - Thẻ ul, li -->
+    <section>
+        <h2>Danh sách</h2>
+        <ul>
+            <li>Mục 1</li>
+            <li>Mục 2</li>
+            <li>Mục 3</li>
+        </ul>
+        <h3>Danh sách có thứ tự</h3>
+        <ol type="A">
+            <li>Mục 1</li>
+            <li>Mục 2</li>
+            <li>Mục 3</li>
+        </ol>
+    </section>
+
+    <!-- 05:53 - Thẻ table -->
+    <section>
+        <h2>Bảng (table)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hàng 1, Cột 1</th>
+                    <th>Hàng 1, Cột 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hàng 2, Cột 1</td>
+                    <td>Hàng 2, Cột 2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 08:12 - Thẻ input -->
+    <section>
+        <h2>Thẻ Nhập liệu (input)</h2>
+        <label for="name">Tên của bạn:</label>
+        <input type="text" id="name" name="name" placeholder="Nhập tên">
+    </section>
+
+    <!-- 09:39 - Thẻ button -->
+    <section>
+        <h2>Thẻ Nút (button)</h2>
+        <button type="button" onclick="alert('Bạn đã nhấn nút!')">Nhấn vào đây</button>
+    </section>
+
+    <!-- 09:58 - Thẻ div -->
+    <section>
+        <h2>Thẻ Phân vùng (div)</h2>
+        <div>
+            <p>Đây là một khối nội dung được nhóm lại bằng thẻ div.</p>
+        </div>
+    </section>
+
+   <!-- HTML -->
+<section>
+    <h2 id="heading1" class="text">Tiêu đề đặc biệt</h2>
+    <p class="text">Đoạn văn 1</p>
+    <p class="text">Đoạn văn 2</p>
+</section>
+
+
+<section>
+    <h2>Thẻ Ảnh (img)</h2>
+    <img src="priority.png" alt="thứ tự ưu tiên">
+</section>
+
+<section>
+    <h2>So sánh Internal CSS và External CSS</h2>
+    <p class="box" id="box1">Đây là một đoạn văn với Internal CSS và có id 'box1'.</p>
+    <p class="box">Đây là một đoạn văn chỉ có Internal CSS, đã ghi đè external .</p>
+</section>
+
+<!-- 01:22 - Chấm điểm ưu tiên cho các phương pháp -->
+<section>
+    <h2>Chấm điểm ưu tiên cho các phương pháp CSS</h2>
+    <p class="box" style="color: red;">Đoạn văn này có Inline CSS, sẽ có độ ưu tiên cao nhất.</p>
+</section>
+
+<!-- 04:11 - Equal specificity -->
+<section>
+    <h2>Equal Specificity</h2>
+    <p class="box" id="box2">Đây là ví dụ về hai selector có specificity bằng nhau (class và id). Tuy nhiên, nếu có sự trùng lặp, ID sẽ có độ ưu tiên cao hơn.</p>
+</section>
+
+<!-- 06:47 - Universal selector and inherited -->
+<section>
+    <h2>Universal Selector và Inherited</h2>
+    <p class="box">Đoạn văn này sẽ kế thừa font-family từ universal selector.</p>
+</section>
+
+<!-- 09:24 - Important -->
+<section>
+    <h2>CSS Important</h2>
+    <p class="box" style="color: purple !important;">Đoạn văn này sử dụng `!important`, sẽ ghi đè các thuộc tính khác bất chấp độ ưu tiên.</p>
+</section>
+
+
+<section class="demo-section">
+    <h2>Đây là tiêu đề trong section</h2>
+    <p>Đoạn văn này sử dụng biến CSS cho màu sắc và kích thước.</p>
+</section>
+</body>
+</html>

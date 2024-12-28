@@ -1,0 +1,144 @@
+/* Định dạng chung cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Định dạng cho phần header */
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+/* Định dạng cho section */
+section {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+/* Định dạng cho bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Định dạng cho danh sách */
+ul, ol {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Định dạng cho liên kết */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Định dạng cho nút bấm */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* Định dạng cho thẻ div */
+div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-left: 5px solid #4CAF50;
+}
+
+/* CSS */
+
+/* Áp dụng style cho các phần tử có class text */
+.text {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+}
+/* Áp dụng style cho các phần tử có class heading và ID heading1 */
+#heading1.text {
+    font-size: 30px;
+    /* nếu comment lại sẽ kế thừa 18px từ class trên  */
+    color: red;
+    text-align: center;
+}
+
+
+
+/* External CSS */
+.box {
+    color: yellow; /* Màu sắc này sẽ bị ghi đè nếu có Inline CSS hoặc Internal CSS */
+}
+
+#box2 {
+    color: orange; /* Màu sắc này sẽ bị ghi đè nếu có Inline CSS hoặc Internal CSS */
+}
+
+
+
+/* Đặt biến toàn cục cho toàn bộ trang */
+:root {
+    --main-color: #4CAF50; /* Biến toàn cục cho màu chính */
+    --font-size: 18px; /* Biến toàn cục cho kích thước font chữ */
+}
+
+/* Sử dụng biến toàn cục cho các phần tử trong section */
+.demo-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Biến Local chỉ áp dụng trong section này */
+.demo-section {
+    --section-bg-color: lightblue; /* Biến local cho nền của section này */
+    background-color: var(--section-bg-color); /* Áp dụng biến local */
+}
+
+.demo-section h2 {
+    color: var(--main-color); /* Áp dụng biến toàn cục cho màu chữ */
+    font-size: var(--font-size); /* Áp dụng biến toàn cục cho kích thước chữ */
+}
+
+.demo-section p {
+    color: var(--main-color); /* Áp dụng biến toàn cục cho màu chữ */
+    font-size: var(--font-size); /* Áp dụng biến toàn cục cho kích thước chữ */
+}
+
+
