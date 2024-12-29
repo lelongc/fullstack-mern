@@ -142,3 +142,66 @@ div {
 }
 
 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.unit-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Absolute Units */
+.px {
+    width: 100px;
+    height: 50px;
+    background-color: #f4a261;
+}
+
+.cm {
+    width: 3cm;
+    height: 1.5cm;
+    background-color: #e76f51;
+}
+
+/* Relative Units */
+.em {
+    font-size: 2em;
+    background-color: #2a9d8f;
+    color: white;
+}
+
+.rem {
+    font-size: 2rem;
+    background-color: #264653;
+    color: white;
+}
+
+/* Viewport Units */
+.vw {
+    width: 20vw;
+    height: 10vw;
+    background-color: #f77f00;
+    color: white;
+}
+
+.vh {
+    width: 20vh;
+    height: 10vh;
+    background-color: #d62828;
+    color: white;
+}
+
+/* Percentage */
+.percentage {
+    width: 50%;
+    height: 50px;
+    background-color: #003049;
+    color: white;
+}
+

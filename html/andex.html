@@ -177,5 +177,27 @@
     <h2>Đây là tiêu đề trong section</h2>
     <p>Đoạn văn này sử dụng biến CSS cho màu sắc và kích thước.</p>
 </section>
+
+<section >
+<h1>CSS Units Demo</h1>
+    <p>tương đối là thay đổi theo gì đó , tuyệt đối là cố định độ to . thực tế dùng rem hay % cho dễ </p>
+
+    <div class="container">
+        <!-- Absolute Units -->
+        <div class="unit-box px">100px x 50px(Absolute)</div>
+        <div class="unit-box cm">3cm x 1.5cm(Absolute)</div>
+
+        <!-- Relative Units nên dùng rem với html định nghĩa sẵn size 100% để dễ linh hoạt  -->
+        <div class="unit-box em">2em text(Relative so với cha  gần nhất của nó có size )</div>
+        <div class="unit-box rem">2rem text(Relative so với cha nó là html )</div>
+
+        <!-- Viewport Units -->
+        <div class="unit-box vw">20vw x 10vw(phần trăm chiều ngang dọc màn view )</div>
+        <div class="unit-box vh">20vh x 10vh</div>
+
+        <!-- Percentage -->
+        <div class="unit-box percentage">50% width(Relative so với cha nó là div container )</div>
+    </div>
+</section>
 </body>
 </html>
