@@ -1,6 +1,10 @@
-# demo flex box 
+## lưu ý 
+trên dưới- trái phải , chiều cross- main mặc định 
+dùng flex:... thì mặc định nó theo chỉ số flex-direction là row là main baxis ngang 
+ demo flex box 
+ 
 
-- space between 
+#  space between 
 
 code đầu 
 ![alt text](image-2.png)
@@ -48,15 +52,92 @@ thêm flex . lúc này kích thước chia 3 cột dựa vào nội dung bên tr
 
 thêm flex 1 cho con 
 ![alt text](image-20.png)
-thấy 3 thằng có cột bằng nhau , do 3 thằng con để 1 thì chia ra 3 cột bằng nhau 
+thấy 3 thằng có cột bằng nhau , do 3 thằng con để flex 1 thì chia ra 3 cột bằng nhau theo chiều ngang (main) 
 ![alt text](image-21.png)
 ở dưới thì 2 thằng 1 bé hơn 3 lần thằng giữa 
 ![alt text](image-22.png)
 ![alt text](image-24.png)
 
-# làm 3 hàng thành 3 khung nhỏ cách nhau 1 khoảng 
+muốn làm cho thứ tự cột khác nhau thì thêm order cho con 
+![alt text](image-56.png)
+như trên thì con - 1 main 2 thành - 1 2 main 
+![alt text](image-57.png)
+
+# làm 3 hàng thành 3 khung nhỏ cách nhau 1 khoảng theo chiều ngang 
 
 code đầu 
 ![alt text](image-25.png)
 ![alt text](image-26.png)
 thêm thằng cha flex thì nó ra ![alt text](image-27.png)
+thêm flex baxis cho thằng con để chiều  thằng con theo hướng main to ra , mỗi con 30% để 10% còn lại là khoảng cách  , ở đây là ngang ![alt text](image-28.png) ![alt text](image-29.png)
+
+thêm vo thằng cha space between thì nó sẽ cách nhau ra nhưng 2 bên lề nó cũng k có khoảng trắng 
+![alt text](image-31.png)
+
+khi thay bằng space around  : thì khoảng cách trái phải giữa các items bằng nhau ![alt text](image-32.png)
+
+khi thay bằng space evently   : thì khoảng cách giữa các items bằng nhau ![alt text](image-33.png)
+---
+muốn pc thì 3 cột ngang 
+đt thì 3 cột dọc 
+nghĩa là chiều ngang tối thiểu phải như thế nó mới thực hiện hàm 
+nhỏ hơn nó không thực hiện nữa nên nó thành về cột mặc định 
+![alt text](image-55.png)
+
+
+# wrap 
+
+có thể dùng flex rồi space around nhưng nếu kéo màn hình nhỏ lại thì items nó không xuống dòng do mặc định là flex-wrap: nowrap  
+![alt text](image-34.png)
+thay bằng wrap như dưới là kéo màn hình items nó xuống dòng 
+![alt text](image-35.png)
+mặc định nó xuống dòng là do cross axis hướng từ trên xuống 
+dùng wrap-reverse thì cross từ dưới lên 
+
+# căn giữa item 
+![alt text](image-36.png)
+flex cha xong margin auto con ![alt text](image-37.png) ![alt text](image-38.png)
+
+# dọc thành ngang . phần trăm , chuyển động 
+![alt text](image-39.png)
+![alt text](image-40.png)
+- ngoài lề để làm mỗi cột có chiều cao khác nhau thêm thẻ inline chỉnh percent chiều cao 
+![alt text](image-41.png)
+
+thêm thằng cha flex 
+![alt text](image-42.png)
+cha thêm space around 
+![alt text](image-43.png)
+
+do cross bắt đầu từ trên xuống nghĩa là bắt đầu từ trên nên ta đổi cho thằng cha  align-items:flex-end  thành end để về cross end 
+có thể đổi cho thằng con align-self:flex-end thì nó cũng tương tự 
+![alt text](image-45.png)
+![alt text](image-46.png)
+
+thêm code sau cho phần con để nó chuyển động từ gì sang gì 
+code dưới sẽ chuyển từ 50% đến 100% giá trị của từng thằng 
+ví dụ thằng 10% thì sẽ mờ lúc nó bằng 10%-50% = -40% nhưng khi lên tròn đủ 10% lại thì nó hiện lên 
+![alt text](image-47.png)
+
+
+# 1 ông 2 cha , cha 2 con , 1 cột to 2 cột nhỏ 
+
+code đầu 
+![alt text](image-48.png)
+sau khi cho thằng ông  flex 
+![alt text](image-49.png)
+cho 2 thằng ba flex 1 để bằng nhau chiều ngang 
+![alt text](image-50.png)
+![alt text](image-51.png)
+cho thằng cha2 flex sau đó 2 thằng con flex 1 để 2 con  bằng nhau theo chiều ngang 
+![alt text](image-52.png)
+![alt text](image-53.png)
+thêm flex-direction : column cho cha2 để 2 thằng con chiều dọc , mà flex:1 cho con  nên 2 con theo chiều dọc bằng nhau 
+![alt text](image-54.png)
+muốn hồng dưới xanh trên thì cha2 flex-direction : column-reverse , 
+muốn trắng (cha1) qua bên phải thì cho ông flex-direction : row-reverse 
+
+
+
+
+
