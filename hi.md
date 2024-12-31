@@ -1,6 +1,8 @@
 ## lưu ý 
 trên dưới- trái phải , chiều cross- main mặc định 
 dùng flex:... thì mặc định nó theo chỉ số flex-direction là row là main baxis ngang 
+short hand 
+![alt text](image-58.png)
  demo flex box 
  
 
