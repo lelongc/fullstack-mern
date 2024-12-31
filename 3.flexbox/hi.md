@@ -1,11 +1,25 @@
-## lưu ý 
+## lưu ý ![alt text](image-59.png)
 trên dưới- trái phải , chiều cross- main mặc định 
-dùng flex:... thì mặc định nó theo chỉ số flex-direction là row là main baxis ngang 
+dùng flex:... thì mặc định nó theo chỉ số flex-direction là row là main baxis ngang thì nó sẽ chia độ to ngang tỉ lệ tuỳ số 
+order cũng thế , bắt đầu từ trái sang phải theo trục baxis 
 short hand 
 ![alt text](image-58.png)
- demo flex box 
- 
 
+ 
+test 
+https://codepen.io/enxaneta/full/adLPwv/
+
+![alt text](image-60.png)
+![alt text](image-61.png)
+
+gọn thì justify content , align items là đủ , align self 
+khi con muốn khác biệt , 
+align content hơi giống justify content nhưng chỉ dùng được khi wrap và khoảng cách là giữa các dòng khi phần tử trôi xuống 
+## -----
+just content  là con cách nhau + trái phải  , align items là con trên dưới , self là con muốn tự kỉ trên dưới (align) , align conten đi wrap  hơi giống just content  nhưng con  cách nhau trên dưới 
+
+---
+ demo flex box 
 #  space between 
 
 code đầu 
