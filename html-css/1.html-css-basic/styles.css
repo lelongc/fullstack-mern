@@ -205,3 +205,14 @@ div {
     color: white;
 }
 
+
+
+/* pseudo classes   */
+.pseudo h2:active {
+    color: #db2323;
+    text-align: center;
+}
+.pseudo p:hover {
+    color: #db2727;
+    text-align: center;
+}

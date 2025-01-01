@@ -79,3 +79,50 @@ css function
 ![alt text](image-33.png)
 ![alt text](image-34.png)
 ![alt text](image-35.png)
+
+---
+pseudo classes  : lớp giả 
+![alt text](image-36.png)
+---
+pseudo elements 
+![alt text](image-37.png)
+![alt text](image-38.png)
+![alt text](image-39.png)
+![alt text](image-40.png)
+![alt text](image-41.png)
+
+---
+ # position: đi với top left right bottom 
+
+
+- relative : lấy bản thân làm tọa độ 
+![alt text](image-42.png)
+so với margin lấy góc trên trái màn hình làm tọa độ  ![alt text](image-43.png)
+
+
+- absolute : lấy thằng cha làm tọa độ 
+
+
+cha gần nhất có thuộc tính position thì con tự xem nó là cha 
+code : 
+![alt text](image-45.png)
+ví dụ :
+![alt text](image-44.png)
+![alt text](image-46.png)
+![alt text](image-47.png)
+![alt text](image-48.png)
+![alt text](image-49.png)
+
+- fixed : lấy nguyên view trình duyệt làm tọa độ , và nó cố định luôn luôn  ở đó 
+
+![alt text](image-50.png)
+![alt text](image-51.png)
+
+
+- sticky: 
+![alt text](image-52.png)
+
+---
+# flexbox 
+![alt text](image-54.png)
+![alt text](image-53.png)
