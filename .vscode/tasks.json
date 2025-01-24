@@ -6,7 +6,7 @@
       "type": "shell",
       "command": "git add . && git commit -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && git push",
       "options": {
-        "cwd": "${workspaceFolder}" // Chỉ định đúng thư mục chứa repository Git
+        "cwd": "${workspaceFolder}"
       },
       "group": {
         "kind": "none"
