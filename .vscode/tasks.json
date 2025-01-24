@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Git Add Commit Push",
+      "type": "shell",
+      "command": "git add . && git commit -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && git push",
+      "options": {
+        "cwd": "${workspaceFolder}" // Chỉ định đúng thư mục chứa repository Git
+      },
+      "group": {
+        "kind": "none"
+      },
+      "problemMatcher": [],
+      "detail": "Tự động add, commit, và push"
+    }
+  ]
+}
