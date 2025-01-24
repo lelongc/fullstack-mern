@@ -49,3 +49,4 @@ random \* 20 mean 0 - 19.xxx
 
 ![alt text](image-6.png)
 ![alt text](image-7.png)
+nn
