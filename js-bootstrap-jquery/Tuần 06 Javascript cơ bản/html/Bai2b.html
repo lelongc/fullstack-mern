@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2B | Máy tính</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/Bai2b.js"></script>
+    
+    <style>
+        button, input, label{
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"  style="display: flex; justify-content: center; border: 1px solid blue;">
+        
+        <form action="" id="frm" >
+            <div class="row"><h3>PHÉP TÍNH CƠ BẢN</h3></div>
+            <div class="row">
+                <label for="num1">Nhập số thứ 1: </label>
+                <input type="text" id="txtNum1" name="txtNum1" required>
+                <span id="idcheck" style="color: red;">(*)</span>
+            </div>
+
+            <div class="row">
+                <label for="num2">Nhập số thứ 2: </label>
+                <input type="text" id="txtNum2" name="txtNum2" required>
+                <span id="idcheck" style="color: red;">(*)</span>
+            </div>
+
+            <div class="row">
+                <button type="button" onclick="cal('add')">Cộng</button>
+                <button type="button" onclick="cal('sub')">Trừ</button>
+                <button type="button" onclick="cal('mul')">Nhân</button>
+                <button type="button" onclick="cal('div')">Chia</button>
+                <button type="button" onclick="cal('rem')">Chia lấy dư</button>           
+                
+            </div>
+
+            <div class="row">
+                <label for="result">Kết quả: </label>
+                <input type="text" name="" id="txtResult" readonly>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

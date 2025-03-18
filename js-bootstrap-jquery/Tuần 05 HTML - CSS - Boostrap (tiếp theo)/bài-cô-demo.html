@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài demo</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+      table {
+        text-align: center;
+      }
+
+      .table-bak {
+        background-color: #aaa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-lg" style="border: 1px solid black">
+      <div class="row">
+        <img
+          src="./image/banner_car.jpg"
+          alt="banner"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+
+      <!-- Bảng -->
+      <div class="row">
+        <!-- Cột 1 -->
+        <div class="col-4 p-5">
+          <table class="table" border="1" style="color: blue">
+            <tr>
+              <td colspan="2" class="table-bak">Bảng tin thị trường</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="table-bak">Vàng</td>
+            </tr>
+            <tr>
+              <td>Mua vào</td>
+              <td>Bán ra</td>
+            </tr>
+            <tr>
+              <td><input type="text" id="vangmv" readonly /></td>
+              <td><input type="text" id="vangbr" readonly /></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="table-bak">USD</td>
+            </tr>
+            <tr>
+              <td>Mua vào</td>
+              <td>Bán ra</td>
+            </tr>
+            <tr>
+              <td><input type="text" id="usdmv" readonly /></td>
+              <td><input type="text" id="usdbr" readonly /></td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Cột 2 -->
+        <div class="col-4 p-5">
+          <table class="table" border="1">
+            <tr>
+              <td colspan="2" style="color: blue" class="table-bak">
+                Cập nhật giá cả thị trường
+              </td>
+            </tr>
+            <tr>
+              <td>Mua vào</td>
+              <td><input type="text" id="mv" /></td>
+            </tr>
+            <tr>
+              <td>Bán ra</td>
+              <td><input type="text" id="br" /></td>
+            </tr>
+            <tr>
+              <td>Loại xe</td>
+              <td>
+                <select id="xe">
+                  <option value="image/car1.jpg" data-price="35000">
+                    Toyota
+                  </option>
+                  <option value="./image/car2.jpg" data-price="15000">
+                    KIA
+                  </option>
+                  <option value="./image/car3.jpg" data-price="40000">
+                    Ford
+                  </option>
+                  <option value="./image/car4.jpg" data-price="32000">
+                    Civic
+                  </option>
+                  <option value="./image/car5.jpg" data-price="50000">
+                    Ferrari
+                  </option>
+                  <option value="./image/car7.jpg" data-price="45000">
+                    Mercedes
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="radio" id="vang" name="nt" value="vang" />Vàng
+                <input type="radio" id="usd" name="nt" value="usd" />USD
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="button" value="Cập nhật" id="capnhat" />
+                <input type="reset" value="Reset" id="reset" />
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Cột 3 -->
+        <div class="col-md-4 p-5">
+          <table class="table" border="1" style="color: blue">
+            <tr>
+              <td class="table-bak">Bảng báo giá</td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>Với kiểu dáng thể thao sang trọng</li>
+                  <li>Nổi bật, ít tốn nhiên liệu</li>
+                  <li>Kiểu dáng thể thao</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-bak">
+                <img src="../image/car1.jpg" alt="toyota" id="hinhxe" />
+              </td>
+            </tr>
+            <tr>
+              <td style="color: green">
+                <h5>
+                  Giá xe: <span><label id="giaxe">35000</label></span> USD
+                </h5>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Xử lý nút "Cập nhật"
+        document
+          .getElementById("capnhat")
+          .addEventListener("click", function () {
+            var txtmv = document.getElementById("mv").value;
+            var txtbr = document.getElementById("br").value;
+            var selectedCurrency = document.querySelector(
+              'input[name="nt"]:checked'
+            );
+
+            if (selectedCurrency) {
+              if (selectedCurrency.value === "vang") {
+                document.getElementById("vangmv").value = txtmv;
+                document.getElementById("vangbr").value = txtbr;
+                document.getElementById("usdmv").value = "";
+                document.getElementById("usdbr").value = "";
+              } else {
+                document.getElementById("vangmv").value = "";
+                document.getElementById("vangbr").value = "";
+                document.getElementById("usdmv").value = txtmv;
+                document.getElementById("usdbr").value = txtbr;
+              }
+            } else {
+              alert("Vui lòng chọn loại tiền tệ!");
+            }
+          });
+
+        // Xử lý thay đổi khi chọn xe
+        document.getElementById("xe").addEventListener("change", function () {
+          var selectedOption = this.options[this.selectedIndex];
+          var hinhXe = selectedOption.value;
+          var giaXe = selectedOption.getAttribute("price");
+
+          document.getElementById("hinhxe").src = hinhXe;
+          document.getElementById("giaxe").textContent = giaXe;
+        });
+
+        // Xử lý nút "Reset"
+        document.getElementById("reset").addEventListener("click", function () {
+          document.getElementById("vangmv").value = "";
+          document.getElementById("vangbr").value = "";
+          document.getElementById("usdmv").value = "";
+          document.getElementById("usdbr").value = "";
+        });
+      });
+    </script>
+  </body>
+</html>

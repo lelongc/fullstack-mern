@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e5e6fb;
+}
+header{
+    background-color: #3b5798;
+    color: #fff;
+}
+.header-content{
+    font-size: 40px;
+}
+.label-header{
+    font-size: 13px;
+}
+.input-header{
+    height: 20px !important;
+    padding: 0;
+    border-radius: 0;
+}
+#btn-dangnhap{
+    background-color: #4a69ad;
+    color: #fff;
+    padding: 2px 10px;
+    font-size: 13px;
+    line-height: 20px;
+    border: none;
+    font-weight: 900;
+    box-shadow: 0px 2px 2px #000;
+}
+#btn-dangnhap:hover{
+    background-color: #fff;
+    color: #4a69ad;
+}
+
+main{
+    background-color: #e5e6fb;
+}
+.img-content{
+    font-size: 40px;
+    text-align: center;
+    margin-right: 200px;
+    color: #3561a9;
+
+}

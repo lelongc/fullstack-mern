@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 | Ảnh động</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/Bai3.js"></script>
+
+    <style>
+        #div1{
+            margin: 0 auto;
+            margin-top: 20px;
+            height: 320px; 
+            width: 320px; 
+            
+            background-image: url(../image/b4.jpg);  
+            background-size: cover;
+            border-radius: 10px;
+        }
+        .container{
+            border: 1px solid tan; 
+            width: fit-content;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="div1" >  </div>
+        <div class="row mt-2 mb-2 justify-content-center align-items-center">
+            <button id="btnPlay" class="btn" type="button" onclick="play();">Play</button>
+            <button id="btnStop" class="btn ml-2" type="button" onclick="stop();">Stop</button> 
+        </div>
+       
+        
+    </div>
+   
+</body>
+
+</html>

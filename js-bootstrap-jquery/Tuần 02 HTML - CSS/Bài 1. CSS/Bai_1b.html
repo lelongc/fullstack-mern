@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bai1b Cafe Menu❤️</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #k1 {
+        border: 2px solid rgb(165, 140, 144);
+        margin: 0 auto;
+        box-shadow: 2px -2px 1px palevioletred;
+        width: 90%;
+      }
+
+      header {
+        text-align: center;
+        color: brown;
+        text-shadow: 12px 15px 9px rgba(165, 42, 42, 0.605);
+      }
+
+      #menu-start {
+        background-color: rgba(172, 255, 47, 0.475);
+        color: brown;
+        font-size: 20px;
+      }
+
+      #menu-dessert {
+        background-color: rgba(172, 255, 47, 0.475);
+        color: brown;
+        font-size: 20px;
+      }
+      #sec-1,
+      #sec-2 {
+      }
+
+      a {
+        color: red;
+        font-weight: bold;
+      }
+
+      #menu-home {
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        background-color: rosybrown;
+      }
+      #ls-1 > li > a {
+        color: white;
+        text-decoration: none;
+      }
+      #ls-1 > li:hover {
+        background-color: aqua;
+      }
+      #ls-1 > li {
+        display: inline-flex;
+        margin: 0 auto;
+        padding: 5px;
+        width: 15%;
+        line-height: 40px;
+        list-style-type: none;
+        height: 40px;
+      }
+      #hinh-1 {
+        width: fit-content;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="k1">
+      <header>
+        <h2><i>EXMAPLE CAFE MENU</i></h2>
+      </header>
+
+      <nav id="menu-home">
+        <ul id="ls-1">
+          <li style="border-right: 1px solid blue">
+            <img id="hinh-1" src="../images/icons8-home-50.png" alt="home" />
+          </li>
+          <li style="border-right: 1px solid blue">
+            <a href="#star1">Starters </a>
+          </li>
+          <li style="border-right: 1px solid blue">
+            <a href="#MainCourse">Main Courses </a>
+          </li>
+          <li style="border-right: 1px solid blue">
+            <a href="#desserts">Desserts </a>
+          </li>
+          <li>
+            <input type="text" name="" id="" />
+            <input type="button" value="Go" />
+          </li>
+        </ul>
+      </nav>
+
+      <nav id="menu-start">
+        <h2 id="star1">Starters</h2>
+      </nav>
+
+      <section id="sec-1">
+        <ul>
+          <li>Chestnut and Mushroom Goujons <a href="#vegetarian">(v)</a></li>
+          <li>Goat Cheese Salad <a href="#vegetarian">(v)</a></li>
+          <li style="color: sandybrown">
+            <span>
+              <b>HONEY SOY CHICKEN KEBABS <a href="#vegetarian">(V)</a></b>
+            </span>
+          </li>
+          <li>Seafood Salad<a href="#vegetarian">(v)</a></li>
+        </ul>
+        <a href="#topOfHome"> <b>Back to top</b></a>
+      </section>
+
+      <nav id="menu-dessert">
+        <h2 id="desserts">Desserts</h2>
+      </nav>
+
+      <section id="sec-2">
+        <ul>
+          <li>Lemon Sorbet<a href="#vegetarian">(v)</a></li>
+          <li>Chocolate Mud Pie<a href="#vegetarian">(v)</a></li>
+          <li>Pecan Pie<a href="#vegetarian">(v)</a></li>
+          <li>
+            Selection of Fine Chesses form around The World
+            <a href="#vegetarian">(v)</a>
+          </li>
+        </ul>
+        <a href="#topOfHome"> <b>Back to top</b></a>
+      </section>
+    </div>
+  </body>
+</html>

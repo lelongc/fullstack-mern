@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 2 a</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+      .container {
+        border: 2px solid blue;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row-12 border border-info">
+        <table class="table">
+          <thead>
+            <tr>
+              <td colspan="2">
+                <h4 class="border border-info">Check out</h4>
+              </td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <h5>Product 1</h5>
+                <p class="text-secondary">Lorem ipsum dolor sit amet</p>
+              </td>
+              <td>200$</td>
+            </tr>
+            <tr>
+              <td>
+                <h5>Product 2</h5>
+                <p class="text-secondary">Lorem ipsum dolor sit amet</p>
+              </td>
+              <td>120$</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td>
+                <h5>Total</h5>
+              </td>
+              <td>320$</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="row-12">
+        <form class="col-12">
+          <h4 style="margin-bottom: 20px">Credit Card Details</h4>
+          <div class="form-row mb-4">
+            <div class="col-6">
+              <label for="Holder" class="text-secondary">CARD HOLDER</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Holder"
+                placeholder="Card Holder"
+                name="card-holder"
+              />
+            </div>
+            <div class="col-6">
+              <label class="text-secondary">EXPIRATION DATE</label>
+              <div class="form-row">
+                <div class="col-5">
+                  <input type="text" class="form-control" placeholder="MM" />
+                </div>
+                <div class="col-1">
+                  <span>/</span>
+                </div>
+                <div class="col-5">
+                  <input type="text" class="form-control" placeholder="YY" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row mb-4">
+            <div class="col-8">
+              <label for="" class="text-secondary">CARD NUMBER</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Card number"
+                class="form-control"
+              />
+            </div>
+
+            <div class="col-4">
+              <label for="" class="text-secondary">CVC</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="CVC"
+                class="form-control"
+              />
+            </div>
+          </div>
+
+          <div class="row-12 mb-4">
+            <button type="submit" class="btn btn-primary btn-block">
+              Prodceed
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

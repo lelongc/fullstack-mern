@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">Register Form</h2>
+    <form id="registerForm">
+      <div class="mb-3">
+        <label for="fullname" class="form-label">Họ và tên (*)</label>
+        <input type="text" class="form-control" id="fullname" required>
+      </div>
+      <div class="mb-3">
+        <label for="username" class="form-label">Tên Đăng nhập (*)</label>
+        <input type="text" class="form-control" id="username" required minlength="6">
+        <div class="error" id="usernameError"></div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Mật khẩu (*)</label>
+        <input type="password" class="form-control" id="password" required>
+      </div>
+      <div class="mb-3">
+        <label for="confirmPassword" class="form-label">Xác nhận mật khẩu (*)</label>
+        <input type="password" class="form-control" id="confirmPassword" required>
+        <div class="error" id="passwordError"></div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Ngày sinh</label>
+        <div class="d-flex">
+          <select id="day" class="form-select me-2">
+            <option value="">Ngày</option>
+            <!-- Generate day options dynamically -->
+          </select>
+          <select id="month" class="form-select me-2">
+            <option value="">Tháng</option>
+            <!-- Generate month options dynamically -->
+          </select>
+          <select id="year" class="form-select">
+            <option value="">Năm</option>
+            <!-- Generate year options dynamically -->
+          </select>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Điện thoại</label>
+        <input type="text" class="form-control" id="phone">
+        <div class="error" id="phoneError"></div>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Địa chỉ</label>
+        <input type="text" class="form-control" id="address">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email khác</label>
+        <input type="email" class="form-control" id="email">
+        <div class="error" id="emailError"></div>
+      </div>
+      <div class="mb-3">
+        <label for="interest" class="form-label">Sở thích</label>
+        <select id="interest" class="form-select">
+          <option value="Ca Nhạc">Ca Nhạc</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="validateForm()">Đăng Ký</button>
+      <button type="reset" class="btn btn-secondary">Hủy</button>
+    </form>
+  </div>
+
+  <script>
+    // Function to validate form fields
+    function validateForm() {
+      let isValid = true;
+      
+      // Reset error messages
+      document.getElementById("usernameError").innerText = "";
+      document.getElementById("passwordError").innerText = "";
+      document.getElementById("phoneError").innerText = "";
+      document.getElementById("emailError").innerText = "";
+
+      // Validate username
+      const username = document.getElementById("username").value;
+      if (username.length < 6) {
+        document.getElementById("usernameError").innerText = "Tên đăng nhập phải có ít nhất 6 ký tự";
+        isValid = false;
+      }
+
+      // Validate password confirmation
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+      if (password !== confirmPassword) {
+        document.getElementById("passwordError").innerText = "Mật khẩu xác nhận không khớp";
+        isValid = false;
+      }
+
+      // Validate phone number (must be numeric)
+      const phone = document.getElementById("phone").value;
+      if (phone && !/^\d+$/.test(phone)) {
+        document.getElementById("phoneError").innerText = "Điện thoại phải là số";
+        isValid = false;
+      }
+
+      // Validate email format
+      const email = document.getElementById("email").value;
+      if (email && !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+        document.getElementById("emailError").innerText = "Email không hợp lệ";
+        isValid = false;
+      }
+
+      // If valid, proceed to next page
+      if (isValid) {
+        window.location.href = "thongtin.htm";
+      }
+    }
+
+    // Populate day, month, and year options
+    window.onload = function() {
+      const daySelect = document.getElementById("day");
+      const monthSelect = document.getElementById("month");
+      const yearSelect = document.getElementById("year");
+      
+      for (let i = 1; i <= 31; i++) {
+        const dayOption = document.createElement("option");
+        dayOption.value = i;
+        dayOption.text = i;
+        daySelect.add(dayOption);
+      }
+
+      for (let i = 1; i <= 12; i++) {
+        const monthOption = document.createElement("option");
+        monthOption.value = i;
+        monthOption.text = i;
+        monthSelect.add(monthOption);
+      }
+
+      for (let i = 1940; i <= new Date().getFullYear(); i++) {
+        const yearOption = document.createElement("option");
+        yearOption.value = i;
+        yearOption.text = i;
+        yearSelect.add(yearOption);
+      }
+    }
+  </script>
+</body>
+</html>

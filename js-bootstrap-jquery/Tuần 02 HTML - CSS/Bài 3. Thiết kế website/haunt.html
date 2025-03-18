@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3 | Haunted</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #k1 {
+        border: 1px solid black;
+        margin: 0 auto;
+        margin-top: 20px;
+        height: 1000px;
+        width: 1000px;
+        background-image: url(../images/background.jpg);
+        color: white;
+      }
+
+      header {
+        width: 97%;
+        height: 150px;
+        background-image: url(../images/salogo.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-position-x: 15px;
+      }
+
+      nav {
+        float: left;
+        width: 25%;
+        height: 550px;
+        border-right: 1px solid green;
+        /* background-size: contain; */
+      }
+
+      section {
+        float: right;
+        width: 75%;
+        height: 550px;
+      }
+
+      footer {
+        float: left;
+        width: 95%;
+        height: 50px;
+        border-top: 5px double green;
+        border-spacing: 100px;
+        word-spacing: 5px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+
+      #c1 {
+        background-color: antiquewhite;
+        /* box-shadow: 5px 5px 10px gray; */
+        width: 90%;
+        margin-left: 10px;
+        border: 7px groove bisque;
+      }
+
+      #c1 > li {
+        list-style-type: none;
+        width: 90%;
+        margin-left: -20px;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      #c1 > li > a {
+        text-decoration: none;
+      }
+
+      #c1 > li:hover {
+        background-color: aqua;
+        box-shadow: 5px 5px 10px yellowgreen;
+      }
+
+      h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: 10px;
+        background-color: green;
+        width: 50%;
+        padding-left: 10px;
+      }
+
+      h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: 10px;
+        background-color: green;
+        font-style: italic;
+        letter-spacing: 10px;
+        font-size: 35px;
+        width: 72%;
+        padding-left: 50px;
+      }
+
+      #k2 {
+        padding: 5px;
+      }
+
+      #k3 {
+        width: 200px;
+        float: right;
+        margin-right: 10px;
+      }
+
+      #links {
+        background-color: antiquewhite;
+      }
+
+      p {
+        margin-left: 10px;
+        line-height: 17px;
+      }
+
+      #ls-2,
+      #ls-3 {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="k1">
+      <header></header>
+      <nav>
+        <ul id="c1">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="maze.html">The Com Maze</a></li>
+          <li><a href="haunt.html">The Haunted Maze</a></li>
+          <li><a href="petting.html">Petting Bam</a></li>
+          <li><a href="produce.html">Produce</a></li>
+        </ul>
+      </nav>
+      <section>
+        <div id="k2">
+          <h1>The Haunted Maze</h1>
+          <div id="k3">
+            <img src="../images/photo3.jpg" alt="photo3" />
+          </div>
+
+          <p>
+            Back for another year, every night, the Sunny Acres Corn Maze
+            becomes the Sunny Acres Haunted Maze. This season's maze begins with
+            an encounter with an evil organist (played by the Council Bluff
+            Choir's own Glenn Frye). Explore the maze and find the zombie
+            graveyard, the pumpkin tower, and a haunted house made of corn, not
+            to mention the spiders, ghosts, witches, and other assorted villainy
+            that inhabit the maze.
+          </p>
+          <p>
+            The Haunted Maze is open the last three weekends of October with a
+            special event on Halloween. Come early in the day to explore the
+            larger Corn Maze, stay for a homemade meal of brats and burgers,
+            soda, and chips, and then participate in the Halloween Festival.
+            Special stations will be set up in the Haunted Maze for
+            trick-or-treaters. A smaller maze is also available that is
+            "scare-friendly" for younger children.
+          </p>
+
+          <h2>Hours</h2>
+          <ul id="ls-2">
+            <li>Open 5 pm - 9 pm on October 14, 15, 21, 22, 28, and 29</li>
+            <li>Halloween Festival October 31 from 3 pm - 9 pm</li>
+          </ul>
+          <h2>Admission</h2>
+          <ul id="ls-3">
+            <li>Age 12 and over: $8.50</li>
+            <li>Age 6 - 11: $6.50</li>
+            <li>Age Under 6: $2.50</li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        Sunny Acres ☀ Tammy & Brent Nielsen ☀ 1977 Highway G ☀ Council Bluffs,
+        IA 51503
+      </footer>
+    </div>
+  </body>
+</html>

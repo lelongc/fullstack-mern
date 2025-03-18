@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bai2.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .infor {
+            left: 4.5%;
+            padding: 20px;
+            width: 30%;
+            color: white;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            right: unset;
+            left: -9%;
+            bottom: 25%;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand text-capitalize font">Feane</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#myNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav mx-auto text-uppercase">
+            <li class="nav-item mx-3">
+              <a href="../html/home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="../html/menu.html" class="nav-link active">Menu</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="../html/about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="../html/book.html" class="nav-link">Book Table</a>
+            </li>
+          </ul>
+          <div class="ml-auto">
+            <a href="#" class="mr-5"><i class="fas fa-user"></i></a>
+            <a href="#" class="mr-5"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" class="mr-5"><i class="fas fa-search"></i></a>
+            <button
+              class="btn btn-cus"
+              data-toggle="modal"
+              data-target="#modal"
+            >
+              Create Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container content">
+      <div class="row mt-5">
+        <div class="col mt-5 d-flex justify-content-center">
+          <h1 class="text-capitalize mt-5 font" style="font-size: 40px !important;">our menu</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center mt-5">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" data-toggle="pill" id="all"
+                >All</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="pill" id="burger"
+                >Burger</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="pill" id="pizza"
+                >Pizza</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="pill" id="pasta"
+                >Pasta</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="pill" id="fries"
+                >Fries</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center mt-3 card-list">
+          <div class="card pizza">
+            <div class="img-container">
+              <img src="../images/f1.png" alt="Logo" class="card-img img-fluid" />
+            </div>
+
+            <div class="card-top">
+              <h3>Delicious Pizza</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis aliquam eaque error perferendis
+              </p>
+            </div>
+            <div class="card-bottom">
+              <p>20$</p>
+              <a href="#" class="icon-card"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card burger">
+            <div class="img-container">
+              <img src="../images/f2.png" alt="Logo" class="card-img img-fluid" />
+            </div>
+
+            <div class="card-top">
+              <h3>Delicious Burger</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis aliquam eaque error perferendis
+              </p>
+            </div>
+            <div class="card-bottom">
+              <p>15$</p>
+              <a href="#" class="icon-card"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card pizza">
+            <div class="img-container">
+              <img src="../images/f3.png" alt="Logo" class="card-img img-fluid" />
+            </div>
+
+            <div class="card-top">
+              <h3>Delicious Pizza</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis aliquam eaque error perferendis
+              </p>
+            </div>
+            <div class="card-bottom">
+              <p>19$</p>
+              <a href="#" class="icon-card"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card pasta">
+            <div class="img-container">
+              <img src="../images/f4.png" alt="Logo" class="card-img img-fluid" />
+            </div>
+
+            <div class="card-top">
+              <h3>Delicious Pasta</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis aliquam eaque error perferendis
+              </p>
+            </div>
+            <div class="card-bottom">
+              <p>19$</p>
+              <a href="#" class="icon-card"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card fries">
+            <div class="img-container">
+              <img src="../images/f5.png" alt="Logo" class="card-img img-fluid" />
+            </div>
+
+            <div class="card-top">
+              <h3>Delicious Fries</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis aliquam eaque error perferendis
+              </p>
+            </div>
+            <div class="card-bottom">
+              <p>10$</p>
+              <a href="#" class="icon-card"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card pizza">
+            <div class="img-container">
+              <img src="../images/f6.png" alt="Logo" class="card-img img-fluid" />
+            </div>
+
+            <div class="card-top">
+              <h3>Delicious Pizza</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis aliquam eaque error perferendis
+              </p>
+            </div>
+            <div class="card-bottom">
+              <p>19$</p>
+              <a href="#" class="icon-card"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card burger">
+            <div class="img-container">
+              <img src="../images/f7.png" alt="Logo" class="card-img img-fluid" />
+            </div>
+
+            <div class="card-top">
+              <h3>Delicious Burger</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis aliquam eaque error perferendis
+              </p>
+            </div>
+            <div class="card-bottom">
+              <p>19$</p>
+              <a href="#" class="icon-card"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card burger">
+            <div class="img-container">
+              <img src="../images/f8.png" alt="Logo" class="card-img img-fluid" />
+            </div>
+
+            <div class="card-top">
+              <h3>Delicious Burger</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis aliquam eaque error perferendis
+              </p>
+            </div>
+            <div class="card-bottom">
+              <p>15$</p>
+              <a href="#" class="icon-card"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card pasta">
+            <div class="img-container">
+              <img src="../images/f9.png" alt="Logo" class="card-img img-fluid" />
+            </div>
+
+            <div class="card-top">
+              <h3>Delicious Pasta</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis aliquam eaque error perferendis
+              </p>
+            </div>
+            <div class="card-bottom">
+              <p>19$</p>
+              <a href="#" class="icon-card"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title font" style="color: #ffc107; font-size: 40px !important;">Order</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <label for="phone">Telephone</label>
+                <input type="text" name="" id="phone" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="mail">Email</label>
+                <input type="text" name="" id="mail" class="form-control" />
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="check"
+                  class="form-check-input"
+                />
+                <label for="check" class="form-check-label">Check me out</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn">Order</button>
+            <button class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+
+</html>

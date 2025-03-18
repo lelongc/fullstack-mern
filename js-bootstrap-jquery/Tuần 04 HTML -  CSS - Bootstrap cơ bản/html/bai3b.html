@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal kết hợp Carousel</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+      .container {
+        margin: 0 auto;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Button to Open the Modal -->
+      <button
+        class="btn btn-primary btn-lg btn-block"
+        data-toggle="modal"
+        data-target="#myModel-Login"
+      >
+        Login Modal
+      </button>
+
+      <!-- The modal -->
+      <div class="modal fade" id="myModel-Login">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal headerr -->
+            <div class="modal-header">
+              <ul class="nav nav-tabs" id="myTab">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="login-tab"
+                    data-toggle="tab"
+                    href="#login"
+                    >ĐĂNG NHẬP</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="signup-tab"
+                    data-toggle="tab"
+                    href="#signup"
+                    >ĐĂNG KÝ</a
+                  >
+                </li>
+              </ul>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+
+            <!-- modal body -->
+            <div class="modal-body">
+              <div class="tab-content" id="myTabContent">
+                <!-- tab 1   đăng nhập login-->
+                <div
+                  class="tab-pane fade show active"
+                  id="login"
+                  role="tabpanel"
+                  aria-labelledby="login-tab"
+                >
+                  <p class="text-secondary">
+                    Vui lòng đăng nhập trước khi mua vé để tích lũy điểm, cơ hội
+                    nhận thêm nhiều ưu đãi từ chương trình thành viên Galaxy
+                    Cinema
+                  </p>
+                  <form action="">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Mật khẩu"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <p>
+                        <a href="#" class="text-secondary">Quên mật khẩu</a>
+                      </p>
+                    </div>
+                    <button type="submit" class="btn btn-block btn-danger">
+                      ĐĂNG NHẬP
+                    </button>
+                  </form>
+                </div>
+
+                <!-- tab 2  đăng ký sign up-->
+                <div
+                  class="tab-pane fade show"
+                  id="signup"
+                  role="tabpanel"
+                  aria-labelledby="signup-tab"
+                >
+                  <form action="">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Họ tên"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col">
+                          <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="form-control"
+                            placeholder="Số điện thoại"
+                          />
+                        </div>
+                        <div class="col">
+                          <select
+                            class="form-control"
+                            id="sel1"
+                            name="sellist1"
+                          >
+                            <option>Chọn giới tính</option>
+                            <option>Nam</option>
+                            <option>Nữ</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col">
+                          <input
+                            type="password"
+                            name=""
+                            id=""
+                            class="form-control"
+                            placeholder="Mật khẩu"
+                          />
+                        </div>
+                        <div class="col">
+                          <input
+                            type="password"
+                            name=""
+                            id=""
+                            class="form-control"
+                            placeholder="Xác nhận mật khẩu"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col">
+                          <select name="" id="" class="form-control">
+                            <option value="">Chọn thành phố</option>
+                            <option value="">TP Hồ Chí Minh</option>
+                            <option value="">Hà Nội</option>
+                            <option value="">Phú Yên</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <select name="" id="" class="form-control">
+                            <option value="">Quận</option>
+                            <option value="">Quận 1</option>
+                            <option value="">Quận Gò vấp</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Địa chỉ"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <input
+                        type="date"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Chọn ngày (dd/mm/yyyy)"
+                      />
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col">
+                        <img
+                          src="../image/capcha.png"
+                          alt="captcha"
+                          style="height: 70%; width: 70%"
+                        />
+                      </div>
+                      <div class="col">
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          class="form-control"
+                          placeholder="Nhập mã captcha"
+                        />
+                      </div>
+                    </div>
+
+                    <p class="text-secondary">
+                      Tôi đã đọc và đồng ý với
+                      <span style="color: red; font-weight: bold"
+                        >CHÍNH SÁCH</span
+                      >
+                      của chương trình.
+                    </p>
+                    <button class="btn btn-danger btn-block">ĐĂNG KÝ</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1c |table</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+      img {
+        height: 70px;
+        width: 70px;
+        float: left;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container border">
+      <table class="table table-borderless table-hover">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Position</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="../image/avt1.jpg"
+                class="rounded-circle float-left"
+                alt="avt1"
+              />
+              <p style="font-weight: bold">John Doe</p>
+              <p class="text-secondary">john.doe@gmail.com</p>
+            </td>
+
+            <td>
+              <p>Software engineer</p>
+              <p class="text-secondary">IT department</p>
+            </td>
+
+            <td class="align-middle">
+              <span class="badge rounded-pill badge-success">Active</span>
+            </td>
+
+            <td class="align-middle">Senior</td>
+
+            <td class="align-middle">
+              <button type="button" class="btn btn-link">EDIT</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../image/avt2.jpg" class="rounded-circle" alt="avt2" />
+              <p style="font-weight: bold">Alex Ray</p>
+              <p class="text-secondary">alex.ray@gmail.com</p>
+            </td>
+
+            <td>
+              <p>Consultant</p>
+              <p class="text-secondary">Finance</p>
+            </td>
+
+            <td class="align-middle">
+              <span class="badge badge-primary">Onboarding</span>
+            </td>
+
+            <td class="align-middle">Junior</td>
+
+            <td class="align-middle">
+              <button type="button" class="btn btn-link">EDIT</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../image/avt3.jpg" class="rounded-circle" alt="avt3" />
+              <p style="font-weight: bold">Kate Hunington</p>
+              <p class="text-secondary">kate.hunington@gmail.com</p>
+            </td>
+
+            <td>
+              <p>Designer</p>
+              <p class="text-secondary">UI/UX</p>
+            </td>
+
+            <td class="align-middle">
+              <span class="badge rounded-pill badge-warning">Awaiting</span>
+            </td>
+
+            <td class="align-middle">Senior</td>
+
+            <td class="align-middle">
+              <button type="button" class="btn btn-link">EDIT</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

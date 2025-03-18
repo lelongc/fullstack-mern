@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+#k1 {
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 900px;
+  height: 720px;
+  box-shadow: 6px 6px 6px rgb(8, 24, 205), -6px -6px 6px gray;
+}
+
+header {
+  /* border: 1px solid black; */
+  background-image: url(../images/background.png);
+}
+
+#nav-1 {
+  /* border: 1px solid black; */
+  height: 25px;
+  background-color: rgb(193, 193, 193);
+}
+
+#sec-0 {
+  border: 1px solid black;
+  width: 70%;
+  float: left;
+  height: 500px;
+}
+
+/* #art-1,
+#art-2 {
+
+} */
+
+aside {
+  float: left;
+  /* border: 1px solid black; */
+  width: 30%;
+  height: 500px;
+}
+
+#sec-1 {
+  /* border: 1px solid black; */
+  height: 50%;
+}
+
+#sec-2 {
+  padding-left: 30px;
+  /* border: 1px solid black; */
+  height: 50%;
+}
+
+footer {
+  float: left;
+  background-color: gray;
+  width: 100%;
+  height: 44px;
+  border: 1px solid black;
+  color: aliceblue;
+  padding: 10px;
+}
+
+#logo-1 {
+  height: 100px;
+  margin-left: 10px;
+  /* border: 1px solid black; */
+  padding-top: 20px;
+}
+#head-1 {
+  padding-left: 20px;
+  color: aliceblue;
+  text-transform: uppercase;
+  line-height: 0.2;
+  letter-spacing: 3px;
+  padding-top: 20px;
+  position: relative;
+}
+#head-2 {
+  padding-left: 20px;
+  color: aliceblue;
+  text-transform: uppercase;
+  line-height: 0.2;
+  font-size: 20px;
+  position: relative;
+}
+#ls-1 {
+  /* border: 1px solid blue; */
+  padding-bottom: 20px;
+}
+#ls-1 > li {
+  list-style-type: none;
+  /* border: 1px solid red; */
+  float: left;
+  width: 10%;
+  color: aliceblue;
+  text-align: center;
+}
+#ls-1 > li:hover {
+  color: black;
+  border-radius: 10px;
+}
+table {
+  padding: 12px;
+}
+h3 {
+  line-height: 0.1;
+  font-size: 25px;
+  color: gray;
+}
+h4 {
+  line-height: 0.1;
+  color: brown;
+}
+h5 {
+  line-height: 0.1;
+  color: brown;
+  font-size: 20px;
+}
+#ls-2 {
+  list-style-type: none;
+}
+#ls-2 > li {
+  width: 80%;
+  color: brown;
+  border-bottom: 1px solid gray;
+  font-size: 15px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+#txt-1,
+#txt-2 {
+  display: contents;
+}

@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #000;
+}
+/* .content{
+    margin-top: 150px;
+} */
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffc107;
+}
+
+i{
+    color: #fff;
+}
+i:hover{
+    color: #ffc107;
+}
+.icon-card{
+    background-color: #ffc107;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-card:hover {
+    background-color: #212731;
+}
+
+.icon-card:hover i {
+    color: #ffc107;
+}
+.btn-cus{
+    border-radius: 20px;
+    background-color: #ffc107;
+    color: #fff;
+}
+.carousel-wrap{
+    position: relative;
+    height: 100vh;
+}
+.carousel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-indicators{
+    transform: translateY(100px);
+
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.carousel-indicators li.active{
+    background-color: #ffc107;
+}
+.form-control{
+    border-radius: 10px;
+    border-color: #ffc107;
+    outline-color: #ffc107;
+}
+.form-control:focus{
+    outline-color: #ffc107;
+    box-shadow: 0 0 5px 0.2rem #ffc107;
+}
+.modal-footer .btn{
+    border-radius: 5px;
+    background-color: #ffc107;
+}
+.card{
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    background-color: #212731;
+}
+.card-img{
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+
+}
+.img-container{
+    background-color: #f1f2f2;
+    border-radius: 15px 15px 0 40px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-top{
+    padding: 10px;
+    user-select: none;
+}
+.card-bottom{
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto;
+}
+.nav-pills li  a{
+    color: #212731;
+}
+.nav-pills li a.nav-link.active{
+    background-color: #212731;
+    color: #fff;
+    border-radius: 20px;
+}
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    
+}
+
+/* TrueType Font (TTF) */
+@font-face {
+    font-family: 'CustomFont0';
+    src: url('../fonts/fontawesome-webfont.ttf') format('truetype');
+}
+
+/* Web Open Font Format (WOFF) */
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('../fonts/fontawesome-webfont.woff') format('woff');
+}
+
+/* Web Open Font Format 2 (WOFF2) */
+@font-face {
+    font-family: 'CustomFont2';
+    src: url('../fonts/fontawesome-webfont.woff2') format('woff2');
+}
+
+.font0 {
+    font-family: 'CustomFont0',sans-serif;
+}
+.font1 {
+    font-family: 'CustomFont1',sans-serif;
+}
+.font3 {
+    font-family: 'CustomFont2',sans-serif;
+}
+
+.font {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+}

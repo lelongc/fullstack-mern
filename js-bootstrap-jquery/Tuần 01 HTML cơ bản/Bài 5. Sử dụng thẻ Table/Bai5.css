@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 5px;
+    width: fit-content;
+}
+/* classic movie day */
+.Table_1{
+    border: 2px solid gray;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.Table_1 td, tr{
+    border: 1px double black;
+}
+
+/* All time list in the centarl */
+
+.Table_2{
+    border: 2px solid gray;
+    width: 100%;
+    margin:  auto;
+}
+.Table_2 table{
+    border-collapse: collapse;
+    border: 3px solid purple;
+}
+.Table_2 td, tr{
+    border: 2px solid gray;
+}

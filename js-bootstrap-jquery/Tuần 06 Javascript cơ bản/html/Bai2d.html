@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2d | Form định dạng</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/Bai2d.js"></script>
+    
+</head>
+
+<body>
+    <div class="container" style="border: 1px solid blue; padding: 20px; margin: 0 auto; margin-top: 20px;">
+        <div class="row" style="margin: 0 auto">
+            <h3 style="text-align: center; margin: 0 auto;">FORM ĐỊNH DẠNG</h3>
+        </div>
+        <div class="row mt-3">
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td>Họ và tên</td>
+                    <td colspan="2"><input type="text" name="" id="" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Chọn</td>
+                    <td><input type="checkbox" name="" id="chek-bg">Background</td>
+                    <td><input type="checkbox" name="" id="chek-font">Font</td>
+                </tr>
+                <tr>
+                    <td>Chọn màu</td>
+                    <td colspan="2">
+                        <select name="" id="" class="form-control">
+                            <option value="color">Chọn màu ... </option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="orange">Orange</option>
+                            <option value="pink">Pink</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" onclick="ChangeColor()">Đổi màu</button></td>
+                    <td><button type="reset" onclick="ResetColor()">Cancel</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            you can direct link the hyperlink with the file if you know the address but this is limited by the browser. eg. if pdf reader is installed on the client then the pdf will not be downloaded instead it will be shown. A good solution would be to have a seperate page for downloading files. just pass filename in querystring and in the pageload event just outpit the file in response stream. This way you can use url say dwnld.aspx? filename.ext
+        </div>
+    </div>
+</body>
+
+</html>

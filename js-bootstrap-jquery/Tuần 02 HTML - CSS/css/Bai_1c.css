@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+#k1 {
+  border: 2px solid rgb(165, 140, 144);
+  margin: 0 auto;
+  box-shadow: 2px -2px 1px palevioletred;
+  width: 960px;
+  height: 800px;
+}
+
+header {
+  text-align: center;
+  color: brown;
+  text-shadow: 12px 15px 9px rgba(39, 22, 232, 0.605);
+  height: 50px;
+}
+
+section {
+  float: left;
+  height: 600px;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  height: 500px;
+  width: 30%;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  margin-top: 10px;
+}
+
+#art-1 {
+  border: 1px solid black;
+  height: 45%;
+  padding: 20px;
+}
+#art-2 {
+  border: 1px solid black;
+  height: 45%;
+  padding: 20px;
+  margin-top: 10px;
+}
+#art-4 {
+  padding: 5px;
+  margin: 5px;
+}
+#hinh-3,
+#hinh-4 {
+  width: 100%;
+}
+
+footer {
+  height: 100px;
+  width: 960px;
+  background-color: pink;
+  border: 1px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: red;
+  font-weight: bold;
+}
+
+#menu-home {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: rosybrown;
+  height: 70px;
+}
+
+#ls-1 > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+#ls-1 > li:hover {
+  background-color: aqua;
+}
+
+#ls-1 > li {
+  display: inline-flex;
+  margin: 0 auto;
+  padding: 5px;
+  width: 15%;
+  line-height: 40px;
+  list-style-type: none;
+  height: 40px;
+}
+
+#hinh-1 {
+  width: fit-content;
+}
+
+/* #menu-2{
+    float: left;
+} */
+#menu-2 {
+  float: left;
+  width: 20%;
+  height: 600px;
+}
+
+#ls-2 {
+  margin-left: -35px;
+  margin-right: 5px;
+}
+
+#ls-2 > li {
+  list-style-type: none;
+  border-radius: 10px;
+  background-color: pink;
+  margin-top: 5px;
+  margin-left: 0;
+  padding-top: 5px;
+  padding-left: 5px;
+  height: 30px;
+  color: azure;
+}
+#ls-2 > li:hover {
+  background-color: aquamarine;
+}
+
+#hinh-2 {
+  width: 170px;
+  border-radius: 50%;
+  box-shadow: 20px 15px 15px pink;
+}
+
+#menu-start {
+  float: left;
+  height: 600px;
+  width: 60%;
+}
+
+h4 {
+  width: 40%;
+  background-color: pink;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: brown;
+  padding-left: 10px;
+  letter-spacing: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+tr {
+  padding-bottom: 10px;
+}

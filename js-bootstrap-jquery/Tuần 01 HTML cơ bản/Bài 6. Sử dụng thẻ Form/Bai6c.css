@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    
+
+}
+#khung {
+    width: 300px;
+
+    border: 2px solid black;
+    padding: 5px;
+
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+
+    border-collapse: collapse;
+    padding: 5px;
+}

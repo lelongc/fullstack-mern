@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+      #k1 {
+        text-align: center;
+        border: 1px solid black;
+        background-color: rgb(169, 218, 110);
+        height: 200px;
+        width: 400px;
+      }
+      header {
+        border-bottom: 1px solid black;
+        height: 10%;
+        width: 100%;
+      }
+      nav {
+        float: left;
+        width: 20%;
+        height: 80%;
+        border-right: 1px solid black;
+      }
+      #renderBody {
+        float: left;
+        width: 60%;
+        height: 80%;
+        border-right: 1px solid black;
+      }
+      section {
+        height: 80%;
+        width: 100%;
+      }
+      footer {
+        height: 10%;
+        width: 100%;
+        border-top: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Layout 2</p>
+    <br />
+    <div id="k1">
+      <header>header</header>
+      <nav>nav</nav>
+      <div id="renderBody"></div>
+      <section>section</section>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

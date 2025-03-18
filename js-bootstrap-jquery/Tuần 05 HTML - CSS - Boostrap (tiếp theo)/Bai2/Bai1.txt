@@ -1,0 +1,37 @@
+Feane
+HOME(CURRENT)
+MENU
+ABOUT
+BOOK TABLE
+Order Online
+
+Fast Food Restaurant
+Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+
+Order Now
+
+-----------------
+
+Our Menu
+All
+Burger
+Pizza
+Pasta
+Fries
+
+Delicious Pizza
+Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+Delicious Burger
+Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+
+Delicious Pizza
+Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+
+
+
+------------
+
+We Are Feane
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All
+
+Read More

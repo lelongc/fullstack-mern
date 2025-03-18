@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký Hè 2022</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            color: black;
+        }
+
+        body {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        #header {
+            overflow: hidden;
+        }
+
+        h2 {
+            text-align: center;
+            color: chocolate;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="border: 1px solid black;">
+        <div id="header">
+            <div class="row">
+                <img src="../image/website.png" alt="">
+            </div>
+        </div>
+
+        <div id="navbar">
+            <nav class="navbar navbar-expand-sm bg-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myModal" data-toggle="modal">Đăng ký</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="section">
+            <div class="container">
+                <div class="row">
+                    <h2>LIST OF MEMBERS</h2>
+                </div>
+
+                <table class="table" id="memberList">
+                    <thead>
+                        <th>STT</th>
+                        <th>Họ và tên</th>
+                        <th>Giới tính</th>
+                        <th>Số điện thoại</th>
+                        <th>Ngày sinh</th>
+                        <th>Địa chỉ</th>
+                        <th>Khóa học</th>
+                        <th>Học phí</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Hoàng Lâm</td>
+                            <td>Nam</td>
+                            <td>09008888</td>
+                            <td>20/3/2010</td>
+                            <td>123 Nguyễn Du P5 Gò Vấp TPHCM</td>
+                            <td>6 Tuần</td>
+                            <td>8,000,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- modal đăng ký -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h2>THÔNG TIN SINH VIÊN</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="row mt-2">
+                                <div class="col-3">
+                                    <label for="txtName">Họ và tên</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" id="txtName" class="form-control" placeholder="Họ và tên: John Lam">
+                                    <span id="erName" class="text-danger">*</span>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-3">
+                                    <label for="txtSDT">Số điện thoại</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" id="txtSDT" class="form-control" placeholder="XXX-YYYYYYY">
+                                    <span id="erSDT" class="text-danger">*</span>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-3">
+                                    <label for="txtNgaysinh">Ngày sinh</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="date" id="txtNgaysinh" class="form-control" placeholder="Ngày sinh">
+                                    <span id="erNgaysinh" class="text-danger">*</span>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-3">
+                                    <label for="txtDiachi">Địa chỉ</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" id="txtDiachi" class="form-control" placeholder="Địa chỉ">
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-3">
+                                    <label for="slKhoahoc">Khóa học</label>
+                                </div>
+                                <div class="col-9">
+                                    <select id="slKhoahoc" class="form-control">
+                                        <option value="2">Khóa 2 Tuần</option>
+                                        <option value="4">Khóa 4 Tuần</option>
+                                        <option value="6">Khóa 6 Tuần</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-3">
+                                    <label for="txtHocphi">Học phí</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" id="txtHocphi" class="form-control" readonly>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-3">
+                                    <label for="txtAvatar">Ảnh đại diện</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" id="txtAvatar" class="form-control" placeholder=".jpg, .png, .gif">
+                                    <span id="erAvatar" class="text-danger">*</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success btn-block" onclick="DangKy()">Lưu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkName() {
+            var regt = /^[A-Z][a-z]+\s[A-Z][a-z]+$/;
+            var t = document.getElementById("txtName").value;
+
+            if (regt.test(t)) {
+                document.getElementById("erName").innerHTML = "";
+                return true;
+            } else {
+                document.getElementById("erName").innerHTML = "Họ tên không hợp lệ";
+                return false;
+            }
+        }
+
+        function checkPhoneNum() {
+            var num = document.getElementById("txtSDT").value;
+            var regt = /^[0-9]{3}-[0-9]{6}$/;
+
+            if (!regt.test(num)) {
+                document.getElementById("erSDT").innerHTML = "Số điện thoại không hợp lệ (định dạng XXX-YYYYYY)";
+                return false;
+            } else {
+                document.getElementById("erSDT").innerHTML = "";
+                return true;
+            }
+        }
+
+        function checkAvatar() {
+            var avt = document.getElementById("txtAvatar").value.trim();
+            var allow = /\.(jpg|png|gif)$/i;
+
+            if (!allow.test(avt)) {
+                document.getElementById("erAvatar").innerHTML = "Lỗi! Chỉ chấp nhận file .jpg, .png, .gif";
+                return false;
+            } else {
+                document.getElementById("erAvatar").innerHTML = "";
+                return true;
+            }
+        }
+
+        function DangKy() {
+            var isValidName = checkName();
+            var isValidPhone = checkPhoneNum();
+            var isValidAvatar = checkAvatar();
+
+            if (isValidName && isValidPhone && isValidAvatar) {
+                var name = document.getElementById("txtName").value;
+                var phoneNumber = document.getElementById("txtSDT").value;
+                var dob = document.getElementById("txtNgaysinh").value;
+                var formattedDob = new Date(dob).toLocaleDateString('en-GB');
+
+                var course = document.getElementById("slKhoahoc");
+                var selectedCourse = course.options[course.selectedIndex].text;
+
+                var courseFee = "";
+                switch (course.value) {
+                    case '2':
+                        courseFee = '5,000,000';
+                        break;
+                    case '4':
+                        courseFee = '8,000,000';
+                        break;
+                    case '6':
+                        courseFee = '9,000,000';
+                        break;
+                }
+
+                var address = document.getElementById("txtDiachi").value;
+
+                var row = '<tr>' +
+                    '<td>' + (document.querySelectorAll('#memberList tr').length) + '</td>' +
+                    '<td>' + name + '</td>' +
+                    '<td>Giới tính</td>' +
+                    '<td>' + phoneNumber + '</td>' +
+                    '<td>' + formattedDob + '</td>' +
+                    '<td>' + address + '</td>' +
+                    '<td>' + selectedCourse + '</td>' +
+                    '<td>' + courseFee + '</td>' +
+                    '</tr>';
+
+                document.getElementById("memberList").insertAdjacentHTML('beforeend', row);
+                $('#myModal').modal('hide');
+                document.getElementById("txtName").value = "";
+                document.getElementById("txtSDT").value = "";
+                document.getElementById("txtNgaysinh").value = "";
+                document.getElementById("txtDiachi").value = "";
+                document.getElementById("slKhoahoc").selectedIndex = 0;
+                document.getElementById("txtHocphi").value = "";
+                document.getElementById("txtAvatar").value = "";
+            }
+        }
+
+        // Update tuition fee based on selected course
+        document.getElementById("slKhoahoc").addEventListener('change', function () {
+            var selectedCourse = this.value;
+            var courseFee = "";
+            switch (selectedCourse) {
+                case '2':
+                    courseFee = '5,000,000';
+                    break;
+                case '4':
+                    courseFee = '8,000,000';
+                    break;
+                case '6':
+                    courseFee = '9,000,000';
+                    break;
+            }
+            document.getElementById("txtHocphi").value = courseFee;
+        });
+    </script>
+</body>
+
+</html>

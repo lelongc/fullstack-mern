@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Form thiết kế form đăng ký</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+      .container {
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid blue;
+        padding: 10px;
+      }
+      input {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col">
+            <label for="">Username*</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Choose your username"
+            />
+
+            <label for="">E-mail*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="Your current email address"
+              name="email"
+            />
+
+            <label for="">Password*</label>
+            <input
+              type="password"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Create a password"
+            />
+
+            <label for="">Full name*</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Your First name and Last name"
+            />
+
+            <label for="">Gender*</label>
+            <br />
+
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="optradio"
+                />Male
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="optradio"
+                />Female
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <label for="">Company name*</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="your company name"
+            />
+
+            <label for="">Category*</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="skills catagory"
+            />
+
+            <label for="">Contact number*</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="provide your number"
+            />
+
+            <label for="">Your Location*</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Your Pincode and City"
+            />
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="" />Agree
+                with the terms and conditions
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6">
+            <form action="" class="form-inline">
+              <button class="btn btn-info">Signup</button>
+              <label for="">or</label>
+              <button class="btn btn-primary">Sign Up with Facebook</button>
+            </form>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

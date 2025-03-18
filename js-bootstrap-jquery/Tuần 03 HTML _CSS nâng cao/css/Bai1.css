@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+#k1 {
+    height: 750px;
+    width: 1000px;
+    color: white;
+    border: 1px solid black;
+    background-image: linear-gradient(#40C3FF,#435CFF);
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    /* border: 1px solid black; */
+    border-bottom: 5px dotted white;
+    margin-top: 0px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+h1 {
+    float:right;
+    color: white;
+    font-size: 45px;
+    margin-right: 20px;
+    text-shadow: 3px 3px 10px blue, 0px 0px 10px white;   
+    margin-top: 0px;
+    font-style: neon;
+}
+
+ul>li {
+    float: left;
+    display: inline;
+    list-style-type: none;
+    width: 100px;
+    margin: 0 auto;
+    margin-right: 40px;
+    /* border: 1px solid black; */
+}
+
+ul>li>a:hover{
+    background-color: tomato;
+}
+
+section {
+    float: left;
+    width: 50%;
+    height: 540px;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+h2,
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside {
+    float: left;
+    width: 50%;
+    height: 540px;
+    /* border: 1px solid black; */
+    /* text-align: center; */
+    padding-right: 50px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 94px;
+    border-top: 5px dotted white;
+    /* border: 1px solid black; */
+}
+
+table{
+    /* border: 1px solid #000; */
+    border-collapse: collapse;
+}
+td{
+    /* border: 1px solid black; */
+    padding-bottom: 10px;
+}
+select{
+    border-radius: 7px;
+    width: 30%;
+    height: 30px;
+    margin: 0 auto;
+}
+input{
+    border-radius: 7px;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+}
+textarea{
+    border-radius: 7px;
+    width: 200px;
+    margin: 0 auto;
+}
+button{
+    height: 40px;
+    width: 60px;
+    border-radius: 7px;
+    margin-top: 5px;
+    border: 3px dotted blue;
+}
+#sky-1{
+    width: 450px;
+    margin-top: 20px;
+}
+h3{
+    color: blue;
+    text-shadow: 3px 3px 1px;
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: bold; 
+}
+h4{
+    color: blue;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-weight: bold; 
+}
+address{
+    text-align: center;
+    line-height: 30px;
+}

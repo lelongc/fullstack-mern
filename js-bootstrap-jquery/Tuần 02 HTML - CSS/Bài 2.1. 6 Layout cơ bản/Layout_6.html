@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 6</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+      #k1 {
+        border: 1px solid black;
+        background-color: rgba(245, 242, 48, 0.736);
+        height: 200px;
+        width: 400px;
+        text-align: center;
+      }
+      header {
+        border-bottom: 1px solid black;
+        height: 15%;
+        width: 100%;
+      }
+      #menu-1 {
+        /* float: left; */
+        height: 10%;
+        width: 100%;
+        border-bottom: 1px solid black;
+      }
+      section {
+        float: left;
+        height: 60%;
+        width: 70%;
+        border-right: 1px solid black;
+        text-align: left;
+      }
+      #art-1 {
+        height: 40%;
+        width: 90%;
+        border: 1px solid black;
+        background-color: blanchedalmond;
+      }
+      #art-2 {
+        height: 40%;
+        width: 90%;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        background-color: rgb(253, 205, 255);
+      }
+      aside {
+        float: left;
+        height: 60%;
+        width: 30%;
+      }
+      footer {
+        float: left;
+        height: 15%;
+        width: 100%;
+        border-top: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Layout 6</p>
+    <br />
+
+    <div id="k1">
+      <header>header</header>
+      <nav id="menu-1">nav</nav>
+      <section>
+        Section
+        <article id="art-1">article</article>
+        <article id="art-2">article</article>
+      </section>
+      <aside>aside</aside>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

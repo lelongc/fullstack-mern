@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang ky</title>
+    <style>
+
+    </style>
+    <script>
+        function displayResgistrationInfo() {
+            const name = document.getElementById("username").value;
+            const pwd = document.getElementById("password").value;
+
+            document.write("<table border='1' >");
+            document.write("<tr>")
+            document.write("<th colspan='3'> THÔNG TIN ĐĂNG KÝ </th>");
+            document.write("</tr>")
+
+            document.write("<tr>")
+            document.write("<td > Họ tên </td>");
+            document.write("<td colspan='2' > " + name + " </td>");
+            document.write("</tr>")
+
+
+            document.write("<tr>")
+            document.write("<td > Mật khẩu </td>");
+            document.write("<td colspan='2' > " + pwd + " </td>");
+            document.write("</tr>")
+
+            document.write("</table>");
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <button type="button"><a href="../html/Bai2a_Dangky.html">Đăng ký</a></button>
+        <button type="button"><a href="../html/Bai2a_Dangnhap.html">Đăng nhập</a></button>
+        <hr>
+        <table style="border: 1px solid black;">
+            <th colspan="2">THÔNG TIN ĐĂNG KÝ</th>
+            <tr>
+                <td>Họ tên</td>
+                <td><input type="text" name="" id="username" required></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td><input type="password" name="" id="password" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" id="btn-submit" onclick="displayResgistrationInfo()">Đăng ký</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

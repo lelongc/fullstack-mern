@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bai2.css">
+    <style>
+        body {
+            background-color: #232730;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-default">
+        <div class="container">
+            <a href="#" class="navbar-brand text-capitalize font">Feane</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav mx-auto text-uppercase">
+                    <li class="nav-item mx-3">
+                        <a href="../html/home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="../html/menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="../html/about.html" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="../html/book.html" class="nav-link">Book Table</a>
+                    </li>
+                </ul>
+                <div class="ml-auto">
+                    <a href="#" class="mr-5"><i class="fas fa-user"></i></a>
+                    <a href="#" class="mr-5"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="mr-5"><i class="fas fa-search"></i></a>
+                    <button class="btn btn-cus" data-toggle="modal" data-target="#modal">
+                        Create Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container pt-5">
+        <div class="row mt-5">
+            <div class="col mt-5">
+                <img src="../images/about-img.png" class="img-fluid w-75 d-block mx-auto" alt="" />
+            </div>
+            <div class="col text-white d-flex justify-content-center align-items-center">
+                <div>
+                    <h1 class="font" style="font-size: 40px;">We are Feane</h1>
+                    <p class="my-5">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text. All
+                    </p>
+                    <a class="btn btn-cus">About Feane</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title font" style="color: #ffc107; font-size: 40px !important;">Order</h3>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="phone">Telephone</label>
+                            <input type="text" name="" id="phone" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="mail">Email</label>
+                            <input type="text" name="" id="mail" class="form-control" />
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="" id="check" class="form-check-input" />
+                            <label for="check" class="form-check-label">Check me out</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn">Order</button>
+                    <button class="btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

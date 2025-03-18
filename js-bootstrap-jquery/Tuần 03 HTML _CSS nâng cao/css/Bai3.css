@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+#k1 {
+  margin: 0 auto;
+  border: 2px solid black;
+  margin-top: 20px;
+  width: 900px;
+  height: 831px;
+}
+
+header {
+  border-bottom: 2px solid black;
+  width: 100%;
+  height: 100px;
+  background-color: #ac4b16;
+  color: #808005;
+  font-size: 40px;
+  text-shadow: -3px -3px 3px rgb(245, 247, 248);
+  font-weight: bold;
+  padding: 20px;
+}
+
+#nav-1 {
+  border-bottom: 2px solid black;
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  float: left;
+}
+
+#ls-1 {
+  list-style-type: none;
+  display: contents;
+  font-size: large;
+}
+
+#ls-1 > li {
+  display: inline-block;
+  /* border: 1px solid brown; */
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+li > a {
+  text-decoration: none;
+  color: orange;
+}
+
+li:hover {
+  background-color: aquamarine;
+}
+
+a:hover {
+  color: blue;
+}
+
+#nav-2 {
+  float: left;
+  border-top: 4px outset #acaea9;
+  height: 100px;
+  width: 100%;
+  background-image: url(../image/line.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  margin-bottom: 30px;
+}
+
+section {
+  float: left;
+  /* border-right: 1px solid steelblue; */
+  height: 500px;
+  width: 60%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+h2 {
+  color: #808005;
+  font-size: 25px;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-left: -20px;
+}
+
+#noi-dung-1 {
+  color: #808005;
+  font-style: italic;
+  font-size: 20px;
+}
+
+input {
+  width: 90%;
+  height: 30px;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  /* Xóa tất cả đường viền */
+  border-bottom: 1px solid gray;
+  /* Chỉ giữ lại đường viền bên dưới */
+}
+
+button {
+  background-color: #808005;
+  color: white;
+  padding: 5px;
+  margin-top: 50px;
+  border: none;
+}
+
+aside {
+  float: left;
+  border-left: 1px solid gray;
+  height: 500px;
+  width: 40%;
+  padding: 5px;
+}
+
+#art-1 {
+  margin: 0 auto;
+  margin-top: 20px;
+  /* border: 1px solid yellowgreen; */
+  height: 40%;
+  width: 90%;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: #faebd6;
+}
+
+#art-2 {
+  margin: 0 auto;
+  margin-top: 20px;
+  /* border: 1px solid yellowgreen; */
+  height: 50%;
+  width: 90%;
+}
+
+h3 {
+  margin: 0;
+  margin-left: 25px;
+  color: #d92501;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+#ls-links {
+  color: #995027;
+  list-style-type: square;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+#hinh-leaf {
+  float: left;
+
+  border: 2px solid gray;
+  padding: 10px;
+  width: 50%;
+  margin-right: 10px;
+}
+
+#noi-dung-2 {
+  margin: 0;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  color: gray;
+  text-align: justify;
+  width: 95%;
+  font-size: 20px;
+  border: 1px solid red;
+}
+
+footer {
+  float: left;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-image: url(../image/footer.png);
+  background-repeat: repeat-x;
+  background-size: 25%;
+}
+
+#top-left {
+  float: left;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+}
+
+#top-right {
+  float: right;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+}
+
+#bottom-left {
+  float: left;
+  margin: 0;
+  margin-top: -33px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+}
+
+#bottom-right {
+  float: right;
+  margin: 0;
+  margin-top: -33px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+}
+
+h4 {
+  letter-spacing: 3px;
+  word-spacing: 1px;
+}

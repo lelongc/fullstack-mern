@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        table {
+            text-align: center;
+        }
+        .table-bak{
+            background-color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-lg" style="border: 1px solid black;">
+        <div class="row">
+            <img src="../image/banner_car.jpg" alt="banner" style="width: 100%; height: 100%;">
+        </div>
+
+        <!-- bảng -->
+        <div class="row">
+
+            <!-- cot 1 start -->
+            <div class="col-4 p-5">
+                <table class="table" border="1" style="color: blue;">
+                    <tr>
+                        <td colspan="2" class="table-bak">Bảng tin thị trường</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"class="table-bak">Vàng</td>
+                    </tr>
+                    <tr>
+                        <td >Mua vào</td>
+                        <td>Bán ra</td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="vangmv" readonly></td>
+                        <td><input type="text" id="vangbr" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="table-bak"> USD</td>
+                    </tr>
+                    <tr>
+                        <td>Mua vào</td>
+                        <td>Bán ra</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="usdmv" readonly></td>
+                        <td><input type="text" id="usdbr" readonly></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- cột 1 end -->
+
+            <!-- cột 2 start -->
+            <div class="col-4 p-5 ">
+                <table class="table" border="1">
+                    <tr>
+                        <td colspan="2" style="color: blue;" class="table-bak">Cập nhật giá cả thị trường</td>
+                    </tr>
+                    <tr>
+                        <td>Mua vào</td>
+                        <td><input type="text" id="mv"></td>
+                    </tr>
+                    <tr>
+                        <td>Bán ra</td>
+                        <td><input type="text" id="br"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Loại xe</td>
+                        <td>
+                            <select name="" id="xe">
+                                <option value="../image/car1.jpg" price="35000">Toyota</option>
+                                <option value="../image/car2.jpg" price="15000">KIA</option>
+                                <option value="../image/car3.jpg" price="40000">Ford</option>
+                                <option value="../image/car4.jpg" price="32000">Civic</option>
+                                <option value="../image/car5.jpg" price="50000">Ferrari</option>
+                                <option value="../image/car7.jpg" price="45000">Mercedes</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="vang" name="nt" value="vang">Vàng
+                            <input type="radio" id="usd" name="nt" value="usd">USD
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Cập nhật" id="capnhat">
+                            <input type="reset" value="Reset" id="reset">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="col-md-4 p-5">
+                <table class="table" border="1" style="color: blue;">
+                    <tr>
+                        <td class="table-bak">Bảng báo giá</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>với kiểu dáng thể thao sang trọng</li>
+                                <li>Nổi bật, ít tốn nhiên liệu</li>
+                                <li>Kiểu dáng thể thao</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-bak"><img src="../image/car1.jpg" alt="toyota" id="hinhxe"></td>
+                    </tr>
+                    <tr>
+                        <td style="color: green;">
+                            <h5>
+                                Giá xe: <span><label id="giaxe">35000 </label></span> USD
+
+                            </h5>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script>
+        $(document).ready(function () {
+            $("#capnhat").click(function () {
+                var txtmv = document.getElementById("mv").value;
+                var txtbr = document.getElementById("br").value;
+                var rad = $('[name="nt"]:radio:checked').val();
+                if (rad == "vang") {
+                    document.getElementById("vangmv").value = txtmv;
+                    document.getElementById("vangbr").value = txtbr;
+                    document.getElementById("usdmv").value = "";
+                    document.getElementById("usdbr").value = "";
+                } else {
+                    document.getElementById("vangmv").value = "";
+                    document.getElementById("vangbr").value = "";
+                    document.getElementById("usdmv").value = txtmv;
+                    document.getElementById("usdbr").value = txtbr;
+                }
+            })
+        });
+
+        $("#xe").change(function () {
+            var h = $(this).children("option:selected").val();
+            $("#hinhxe").attr("src", h);
+
+            var selectedOption = $(this).children("option:selected");
+            var price = selectedOption.attr("price");
+            $("#giaxe").text(price);
+        })
+
+
+
+        $("#reset").click(function () {
+            document.getElementById("vangmv").value = "";
+            document.getElementById("vangbr").value = "";
+            document.getElementById("usdmv").value = "";
+            document.getElementById("usdbr").value = "";
+        });
+
+
+    </script>
+</body>
+
+</html>
