@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Container chính */
+.container {
+  max-width: 900px; /* Tăng lên để cân đối hơn */
+  height: 550px;
+  display: flex; /* Dùng flexbox thay vì float */
+  margin: 50px auto; /* Căn giữa và thêm khoảng cách trên */
+  color: rgb(5, 5, 5);
+  border: 1px solid #090808;
+  background-color: #ffffff; /* Màu nền cho dễ nhìn */
+}
+
+/* Sidebar bên trái */
+.navm {
+  width: 20%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  color: white;
+}
+
+/* Phần điều hướng */
+.nav {
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  border-color: 1px aqua;
+  background-color: rgb(130, 0, 167);
+  margin-top: 0%;
+}
+
+.nav h2 {
+  margin: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.nav ul li {
+  border-bottom: 3px solid white;
+  padding: 8px 10px;
+  font-size: 15px;
+  text-align: right;
+  width: 95%; /* Tránh bị lệch */
+  margin: 0 auto; /* Căn giữa */
+}
+
+/* Ô tìm kiếm */
+.search {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.search input,
+.search select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.search button {
+  width: 40%;
+  padding: 5px;
+}
+
+/* Nội dung chính */
+.main {
+  width: 80%;
+  height: 100%;
+  background-color: #fffefe;
+  padding: 10px;
+
+  margin: 0px 10px 10px 20px;
+}
+.he1-2 {
+  float: right;
+  background-color: rgb(130, 0, 167);
+  color: #ffffff;
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 10px 20px 10px;
+}
+
+.header2 img {
+  margin: 20px auto;
+  width: 100%;
+}
+.s1-i {
+  float: left;
+  margin: 0px 10px 10px 0px;
+  border-radius: 10%;
+}
+.section h1 {
+  text-align: center;
+  color: #8010a5;
+}
+.section > i {
+  text-align: center;
+  display: block;
+}
+.section > a {
+  text-align: right;
+  display: block;
+}
+.footer {
+  width: 100%;
+  height: fit-content; /* Đảm bảo footer không bị mất */
+  text-align: center;
+  margin-top: 20px;
+  border-top: 2px solid #0ba7ce; /* Đảm bảo border hiển thị */
+  border-bottom: 2px solid #0ba7ce; /* Đảm bảo border hiển thị */
+}
