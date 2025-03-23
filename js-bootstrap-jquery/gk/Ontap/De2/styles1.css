@@ -59,18 +59,6 @@ html {
   text-align: right;
   width: 95%;
   margin: 0 auto;
-  transition: background 0.3s;
-}
-
-.nav ul li:hover {
-  background: rgba(255, 255, 255, 0.2);
-  cursor: pointer;
-}
-
-/* Định dạng cho mục đang active */
-.nav ul .active {
-  color: rgb(236, 255, 129);
-  border-bottom: 3px solid red;
 }
 
 /* Ô tìm kiếm */
@@ -90,14 +78,6 @@ html {
   width: 40%;
   padding: 5px;
   cursor: pointer;
-  background-color: white;
-  border: 1px solid #8200a7;
-  color: #8200a7;
-}
-
-.search button:hover {
-  background-color: #8200a7;
-  color: white;
 }
 
 /* Nội dung chính */
@@ -123,7 +103,7 @@ html {
   color: #ffffff;
   padding: 10px;
   text-align: center;
-  margin-left: 10px;
+  margin-left: 300px;
 }
 
 .header2 img {
