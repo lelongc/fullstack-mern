@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đăng Kí Khóa Học</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <style>
+      body {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .required-star {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container border border-dark">
+      <header class="text-center">
+        <img
+          src="../img/header.jpg"
+          class="img-fluid rounded-top w-100"
+          alt="Header"
+        />
+      </header>
+
+      <div class="row my-4">
+        <nav class="col-12 col-md-2 text-center mb-3">
+          <div class="bg-white d-flex flex-column align-items-start gap-3">
+            <a href="#" class="text-decoration-none text-success">Hoạt động</a>
+            <a href="#" class="text-decoration-none text-success"
+              >Danh sách lớp</a
+            >
+            <a href="#" class="text-decoration-none text-success">Ưu đãi</a>
+            <a
+              href="#"
+              class="btn btn-success btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#orderModal"
+              >Đăng kí</a
+            >
+          </div>
+        </nav>
+
+        <section class="col-12 col-md-10">
+          <h3 class="text-uppercase fw-bold mb-3">
+            DANH SÁCH ĐĂNG KÍ KHÓA HỌC
+          </h3>
+          <table class="table text-center">
+            <thead class="table-hover">
+              <tr>
+                <th>STT</th>
+                <th>Họ Và Tên</th>
+                <th>Số Điện Thoại</th>
+                <th>Email</th>
+                <th>Địa chỉ</th>
+                <th>Năm sinh học viên</th>
+                <th>Giáo viên</th>
+              </tr>
+            </thead>
+            <tbody id="orderTable"></tbody>
+          </table>
+        </section>
+      </div>
+
+      <footer class="text-center bg-success text-light p-3">
+        23630851_Lê Thành Long_DHCNTT19A
+      </footer>
+
+      <!-- Modal Form -->
+      <div class="modal fade" id="orderModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title text-primary">Thông Tin Học Viên</h3>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <form id="orderForm">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Họ và Tên"
+                    required
+                  />
+                  <div class="invalid-feedback">Họ và tên không hợp lệ!</div>
+                  <span class="required-star">(*)</span>
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Số điện thoại"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Số điện thoại không hợp lệ!
+                  </div>
+                  <span class="required-star">(*)</span>
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <div class="invalid-feedback">Email không hợp lệ!</div>
+                  <span class="required-star">(*)</span>
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Địa chỉ"
+                    required
+                  />
+                  <div class="invalid-feedback">Địa chỉ không hợp lệ!</div>
+                  <span class="required-star">(*)</span>
+                </div>
+
+                <div class="mb-3">
+                  <input type="date" class="form-control" id="date" required />
+                  <div class="invalid-feedback">Ngày sinh phải hợp lệ!</div>
+                  <span class="required-star">(*)</span>
+                </div>
+
+                <div class="mb-3">
+                  <p>Bạn muốn học giáo viên Hà Nội hay TPHCM?</p>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="gv"
+                      id="gv_hn"
+                      value="Hà Nội"
+                      required
+                    />
+                    <label class="form-check-label" for="gv_hn">Hà Nội</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="gv"
+                      id="gv_hcm"
+                      value="TPHCM"
+                      required
+                    />
+                    <label class="form-check-label" for="gv_hcm">TPHCM</label>
+                  </div>
+                  <div class="invalid-feedback d-block"></div>
+                  <span class="required-star d-block">(*)</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Đăng kí</button>
+              </form>
+            </div>
+
+            <div class="modal-footer justify-content-center">
+              <h4 class="text-primary">23630851_Lê Thành Long_DHCNTT19A</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <!-- <script src="../js/script.js"></script> -->
+    <script src="../js/jquery.js"></script>
+  </body>
+</html>
