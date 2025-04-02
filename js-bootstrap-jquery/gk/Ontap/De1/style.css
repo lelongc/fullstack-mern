@@ -1,142 +1,36 @@
 * {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  color: #f3f3f3, #7db532;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 .container {
-  width: 1200px;
   margin: 0 auto;
-  padding: 10px 10px 0px 10px;
-  border: 1px solid #050505;
-  height: 900px;
+  padding: 10px 20px;
+  width: 1000px;
+  height: 800px;
+  border: 1px solid #392f2f;
 }
 .nav {
-  /* border: 1px solid #050505; */
-  height: 10%;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.nav ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-evenly;
-  margin-bottom: 0px;
-  width: fit-content;
-  height: fit-content;
-}
-.nav ul li {
-  margin: 0 10px;
-}
-.nav img {
-  width: auto;
-  height: 60px;
+  height: 10%;
+  background-color: #bbacac;
 }
 .header {
-  height: 20%;
   width: 100%;
-  position: relative;
+  height: 30%;
+  background-color: #brgb(193, 150, 150)
+
 }
-.header img {
+.section {
   width: 100%;
-  height: 100%;
-}
-.header .overlay {
-  position: absolute;
-  top: 10px;
-  left: 15%;
-  width: 100%;
-  height: 100%;
-}
-.overlay h1 {
-  color: #050505;
-  font-size: 40px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-.overlay h2 {
-  color: #ffffff;
-  font-size: 20px;
-  margin-top: 0px;
-  padding-top: 0px;
+  height: 50%;
+  background-color: #c16d6d;
+
 }
 .footer {
-  height: 5%;
   width: 100%;
-  background-color: #4646461f;
-  color: #0e0c0c;
-}
-.footer p {
-  margin-left: 170px;
-  padding-top: 20px;
-}
-.content1 {
-  height: 40%;
-  width: 75%;
-  margin: 10px auto;
-  padding: 15px;
-  display: flex;
-}
-.content2 {
-  width: 75%;
-  margin: 10px auto;
-  padding: 15px;
-  display: flex;
-  height: 20%;
-}
-.anh {
-  width: 40%;
-  height: 100%;
-  margin: 10px;
-}
-.anh img {
-  width: 100%;
-  height: 100%;
-}
-.nhap {
-  width: 60%;
-  height: 100%;
-  margin: 10px;
-  color: rgb(8, 6, 6);
-}
-.nhap span {
-  font-size: 4px;
-  color: #5de315;
-  padding-left: 25px;
-}
-.nhap > h1 {
-  font-size: 32px;
-  border-left: 3px solid #5de315;
-  padding-left: 20px;
-  margin-top: 0%;
-}
-.form {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #4646461f;
-}
-.form button {
-  display: inline-block;
-  margin: 0;
+  height: 10%;
+  background-color: #6b71c7;
 
-  border: none;
-  cursor: pointer;
-}
-
-.card {
-  width: 45%;
-  height: 100%;
-  margin: 10px;
-  padding: 10px;
-  background-color: #4646461f;
-  color: #0e0c0c;
-  display: flex;
-}
-.card img {
-  width: 80px;
-  height: auto;
-}
-.ct {
-  margin-left: 10px;
 }
